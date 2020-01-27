@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FrelancerBootstrap</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body id="page-top">
+    <%= render 'layout_components/navbar' %>
+    <%= render 'layout_components/header' %>
+    <%= yield %>
+    <%= render 'layout_components/footer' %>
+    <%= render 'layout_components/copyright' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>

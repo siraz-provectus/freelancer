@@ -1,0 +1,59 @@
+<!-- Portfolio Section -->
+<section class="page-section portfolio" id="portfolio">
+  <div class="container">
+
+    <!-- Portfolio Section Heading -->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <!-- Portfolio Grid Items -->
+    <div class="row">
+      <!-- Portfolio Item 1 -->
+      <%= render 'portfolio_item', target_id: "#portfolioModal1", image_url: "img/portfolio/cabin.png" %>
+      <!-- Portfolio Item 2 -->
+      <%= render 'portfolio_item', target_id: "#portfolioModal2", image_url: "img/portfolio/cake.png" %>
+      <!-- Portfolio Item 3 -->
+      <%= render 'portfolio_item', target_id: "#portfolioModal3", image_url: "img/portfolio/circus.png" %>
+      <!-- Portfolio Item 4 -->
+      <%= render 'portfolio_item', target_id: "#portfolioModal4", image_url: "img/portfolio/game.png" %>
+      <!-- Portfolio Item 5 -->
+      <%= render 'portfolio_item', target_id: "#portfolioModal5", image_url: "img/portfolio/safe.png" %>
+      <!-- Portfolio Item 6 -->
+      <%= render 'portfolio_item', target_id: "#portfolioModal6", image_url: "img/portfolio/submarine.png" %>
+    </div>
+
+  </div>
+</section>
+
+<%= render 'about' %>
+<%= render 'contact' %>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-to-top d-lg-none position-fixed ">
+  <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
+
+<!-- Portfolio Modals -->
+
+<!-- Portfolio Modal 1 -->
+<%= render 'portfolio_modal', modal_id: "portfolioModal1", aria_label: "portfolioModal1Label", text: "Log Cabin", image_url: "img/portfolio/cabin.png" %>
+<!-- Portfolio Modal 2 -->
+<%= render 'portfolio_modal', modal_id: "portfolioModal2", aria_label: "portfolioModal2Label", text: "Tasty Cake", image_url: "img/portfolio/cake.png" %>
+<!-- Portfolio Modal 3 -->
+<%= render 'portfolio_modal', modal_id: "portfolioModal3", aria_label: "portfolioModal3Label", text: "Circus Tent", image_url: "img/portfolio/circus.png" %>
+<!-- Portfolio Modal 4 -->
+<%= render 'portfolio_modal', modal_id: "portfolioModal4", aria_label: "portfolioModal4Label", text: "Controller", image_url: "img/portfolio/game.png" %>
+<!-- Portfolio Modal 5 -->
+<%= render 'portfolio_modal', modal_id: "portfolioModal5", aria_label: "portfolioModal5Label", text: "Locked Safe", image_url: "img/portfolio/safe.png" %>
+<!-- Portfolio Modal 6 -->
+<%= render 'portfolio_modal', modal_id: "portfolioModal6", aria_label: "portfolioModal6Label", text: "Submarine", image_url: "img/portfolio/submarine.png" %>
